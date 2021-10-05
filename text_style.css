@@ -1,0 +1,14 @@
+.textAnimation {
+  animation: goUp 1s ease-in-out alternate;
+  display: inline-block;
+}
+
+@keyframes goUp {
+  0% {
+    transform: translateY(20vw);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
