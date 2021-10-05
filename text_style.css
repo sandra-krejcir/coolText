@@ -1,14 +1,29 @@
 .textAnimation {
   animation: goUp 1s ease-in-out alternate;
   display: inline-block;
+  width: auto;
 }
 
 @keyframes goUp {
   0% {
-    transform: translateY(20vw);
+    transform: translateY(100vw);
   }
 
   100% {
     transform: translateY(0);
+  }
+}
+
+.appear {
+  animation: appear 2s alternate;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  0% {
+    opacity: 1;
   }
 }

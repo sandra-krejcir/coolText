@@ -22,11 +22,12 @@ function loop() {
   if (iterator < maxIterations) {
     let letter = document.createElement("span");
     letter.textContent += theText[iterator - 1];
-    document.querySelectorAll("span").forEach((elm, i) => {
-      elm.classList.add("textAnimation");
-      elm.style.animationDelay = `${i / 15}s`;
-    });
+
     document.querySelector("h1").appendChild(letter);
     loop();
   }
+  document.querySelectorAll("span").forEach((elm, i) => {
+    elm.classList.add("textAnimation");
+    elm.style.animationDelay = `${i / 15}s`;
+  });
 }
